@@ -1,0 +1,307 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', 'sans-serif';
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+::selection {
+    background: #fff;
+    color: rgb(157, 20, 20);
+}
+.center{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.center h1{
+    font-size: 45px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    display: inline;
+}
+.center p{
+    font-size: 20px;
+    letter-spacing: 4px;
+    display: inline;
+}
+.nav{
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+a{  
+    color: inherit;
+    text-decoration: none;
+    background: transparent;
+}
+.nav a::after{
+    opacity: 1;
+}
+.nav a:hover{
+    opacity: 0.7;
+}
+
+.btn::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(157, 20, 20);
+    display: block;
+    transition: 0.3s;
+}
+.btn:hover::after{
+    width: 100%;
+}
+.nav ul{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    justify-items: center;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    padding-bottom: 2vh;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.up-area{
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    }
+.up-area h3{
+    font-size: 20px;
+}
+.up-area p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-right: 60%;
+}
+.up-area ul{
+    list-style: none;
+}
+.up-area li{
+    display: inline-block;
+    justify-items: center;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    padding-bottom: 2vh;
+    font-size: 20px;
+}
+#gem{
+    font-size: 2em;
+}
+#diamond{
+    font-size: 0.5em;
+    margin: -4%;
+    padding-left: 2%;
+    color: rgb(157, 20, 20);
+}
+i{
+    font-size: 1.6em;
+}
+#gem{
+    left: 0;
+    padding-left: 10%;
+    position: absolute;
+}
+#toogle-dark{
+    cursor: pointer;
+    font-size: 2em;
+    right: 0;
+    padding-right: 20%;
+    position: absolute;
+}
+.btn{
+    cursor: pointer;
+    right: 0;
+    padding-right: 10%;
+    position: absolute;
+}
+
+@media screen and (max-width: 900px)
+{
+    .center h1{
+        font-size: 35px;}
+    .center p{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .nav{
+        text-align: center;
+    }
+    .nav li{
+        padding-top: 10px;
+        font-size: 1.2rem;
+    }
+    .up-area{
+        margin-top: 5%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .up-area p{
+        display: none;
+    }
+    #diamond{
+        justify-content: center;
+    }
+    #toogle-dark{
+        font-size: 2rem;
+        padding-right: 45%;
+    }
+    .btn{
+        padding-right: 20%;
+    }
+}
+/*---------------- About Page ----------------*/
+.about{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.about h1{
+    font-size: 45px;
+    letter-spacing: 4px;
+    color: rgb(157, 20, 20);
+}
+.about h2{
+    padding-top: 2%;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.about p{
+    font-size: 14px;
+    padding-top: 4%;
+    text-align: left;
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: rgb(119,119,119)
+}
+.about h3{
+    font-size: 20px;
+}
+u{
+    color: rgb(157, 20, 20);
+}
+#diamond-title{
+    font-size: 45px;
+}
+@media screen and (max-width: 1050px){
+    .about{
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 900px){
+    .about{
+        margin-top: 5%;
+    }
+    .about p{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    }
+}
+@media screen and (max-width: 600px){
+    .about{
+        margin-top: 70%;
+    }
+}
+@media screen and (max-width: 550px){
+    .about{
+            margin-top: 60%;
+        }
+}
+@media screen and (max-width: 380px){
+    .about{
+        margin-top: 100%
+    }
+}
+@media screen and (max-width: 300px){
+    .about{
+        margin-top: 130%;
+    }
+    .about h1{
+        font-size: 35px;
+    }
+    .about h2{
+        font-size: 20px;
+    }
+    #toogle-dark{
+        padding-right: 50%;
+    }
+}
+/*---------------- Projects Page ----------------*/
+.center-area{
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+.center-area h1{
+    font-size: 45px;
+    letter-spacing: 4px;
+    color: rgb(157, 20, 20);
+}
+#arrow{
+    text-align: center;
+}
+.red{
+    color: rgb(157, 20, 20);
+}
+
+/*---------------- Contact Page ----------------*/
+.center h2{
+    padding-top: 2%;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+/*---------------- Talk Page ----------------*/
+.center h2{
+    padding-top: 2%;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+.email::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(157, 20, 20);
+    display: block;
+    transition: 0.3s;  
+}
+.email:hover::after{
+    width: 100%;
+}
+.links{ 
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.links h3{
+    font-size: 20px;
+}
